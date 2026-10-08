@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reverse Engineering & Wearable Technology Studio | LTU EBL</title>
+  
+  <meta name="description" content="Reverse Engineering, Design Thinking, and AI-Enabled SCAMPER Ideation for Wearable Technology. Dr. Eric G. Meyer & Prof. John Peponis, Lawrence Technological University.">
+  <meta name="keywords" content="Reverse Engineering, Pedometer Teardown, Design Thinking, SCAMPER, Wearable Technology, KEEN Card 5823, Lawrence Tech, BME 3113">
+  
+  <!-- Google Fonts: Inter & Outfit -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+  
+  <!-- Bootstrap Icons CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Site Navigation Header -->
+  <header class="app-header">
+    <div class="container header-inner">
+      <a href="https://ltuebl.github.io/" class="brand-link" title="Return to LTU EBL Main Portal">
+        <img src="EBLlogo.png" alt="EBL Logo" class="brand-logo">
+        <div class="brand-info">
+          <span class="brand-name">Wearable Technology Studio</span>
+          <span class="brand-sub">Lawrence Technological University &middot; Biomedical Engineering</span>
+        </div>
+      </a>
+      
+      <div class="header-nav">
+        <a href="#reflection" class="nav-item">Reflection</a>
+        <a href="#teardown" class="nav-item">Pedometer Lab</a>
+        <a href="#design-thinking" class="nav-item">Design Thinking</a>
+        <a href="#scamper-ai" class="nav-item">SCAMPER AI</a>
+        <a href="#homework" class="nav-item">HW 1 Project</a>
+        <a href="https://engineeringunleashed.com/card/5823" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+          <i class="bi bi-lightbulb-fill"></i> KEEN Card #5823
+        </a>
+        <a href="https://ltuebl.github.io/" class="btn btn-secondary btn-sm" title="Back to main overview website">
+          <i class="bi bi-arrow-left"></i> EBL Home
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <i class="bi bi-tools"></i> Entrepreneurial Minded Learning (EML) &middot; Studio Pedagogy
+        </div>
+        <h1 class="hero-title">
+          Reverse Engineering &amp; <span class="highlight">Design Process Studio</span>
+        </h1>
+        <div class="hero-authors">
+          <span><strong>Dr. Eric G. Meyer, PhD</strong></span>
+          <span class="dot">&middot;</span>
+          <span><strong>Prof. John Peponis</strong></span>
+          <span class="dot">&middot;</span>
+          <span>Lawrence Technological University</span>
+        </div>
+        <p class="hero-desc">
+          Hands-on electromechanical teardowns, big tech design reflections, zero-fidelity prototyping, 
+          and Generative AI SCAMPER ideation. Developed for <strong>BME 3113 (Wearable Technology Design)</strong>, 
+          <strong>BME 1002 (Intro to BME)</strong>, and the <strong>LTU BME High School Summer Camp</strong>.
+        </p>
+        
+        <div class="hero-actions">
+          <a href="#teardown" class="btn btn-primary">
+            <i class="bi bi-screwdriver"></i> Pedometer Teardown Lab
+          </a>
+          <a href="#design-thinking" class="btn btn-outline">
+            <i class="bi bi-lightbulb"></i> Design Thinking &amp; SCAMPER
+          </a>
+          <a href="#homework" class="btn btn-outline">
+            <i class="bi bi-journal-check"></i> HW 1 Wearable Investigation
+          </a>
+          <a href="https://engineeringunleashed.com/card/5823" target="_blank" rel="noopener noreferrer" class="btn btn-accent">
+            <i class="bi bi-card-text"></i> KEEN Card #5823
+          </a>
+        </div>
+      </div>
+      
+      <div class="hero-card">
+        <div class="hero-card-img" style="background:#FFFFFF;">
+          <img src="wearable_sensors_landscape.png" alt="Wearable Technology Sensor Landscape">
+        </div>
+        <div class="hero-card-caption">
+          <strong>Wearable Technology Taxonomy:</strong> Exploring physiological sensing across activity, biomechanical force/pressure, EMG/EEG muscle signals, audio/vision, and biochemical biomarkers.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 1: Reflection Activity -->
+  <section class="section section-alt" id="reflection">
+    <div class="container">
+      <div class="section-title-wrap">
+        <span class="section-eyebrow">Design Process Reflection</span>
+        <h2 class="section-title">Design Lessons from Big Tech &amp; Wearables</h2>
+        <p class="section-subtitle">
+          Reflecting on consumer adoption, industrial form factors, and engineering design frameworks.
+        </p>
+      </div>
+
+      <div class="assignment-box">
+        <div class="assignment-header">
+          <span class="tag-badge"><i class="bi bi-chat-quote-fill"></i> Reflection Assignment Prompt</span>
+          <div style="font-size:0.85rem; color:var(--text-muted); font-weight:600;">Individual Discussion Post &middot; Peer Review</div>
+        </div>
+
+        <div class="assignment-prompt">
+          <p>
+            Watch the <strong>Fitbit designer interview video</strong>, review the <strong>"Design Lessons from Big Tech"</strong>, and read one recent article from the <strong>Wearable Technology Insights</strong> website:
+          </p>
+          <div class="curated-links-grid">
+            <a href="https://www.youtube.com/watch?v=m4hdtSyyigc" target="_blank" rel="noopener noreferrer" class="link-card">
+              <i class="bi bi-youtube icon-red"></i>
+              <div>
+                <strong>Fitbit Designer Interview</strong>
+                <span>Watch on YouTube &middot; Industrial design &amp; UX</span>
+              </div>
+              <i class="bi bi-box-arrow-up-right link-arrow"></i>
+            </a>
+
+            <a href="https://modelthinkers.com/playbook/design-lessons-from-big-tech" target="_blank" rel="noopener noreferrer" class="link-card">
+              <i class="bi bi-lightbulb-fill icon-amber"></i>
+              <div>
+                <strong>Design Lessons from Big Tech</strong>
+                <span>ModelThinkers Playbook &middot; Frameworks</span>
+              </div>
+              <i class="bi bi-box-arrow-up-right link-arrow"></i>
+            </a>
+
+            <a href="https://www.wearabletechnologyinsights.com/" target="_blank" rel="noopener noreferrer" class="link-card">
+              <i class="bi bi-newspaper icon-blue"></i>
+              <div>
+                <strong>Wearable Technology Insights</strong>
+                <span>Current medical &amp; commercial trends</span>
+              </div>
+              <i class="bi bi-box-arrow-up-right link-arrow"></i>
+            </a>
+
+            <a href="https://engineeringunleashed.com/card/5823" target="_blank" rel="noopener noreferrer" class="link-card">
+              <i class="bi bi-card-text icon-green"></i>
+              <div>
+                <strong>KEEN Educational Card #5823</strong>
+                <span>Quantified Self &middot; Essential Skills</span>
+              </div>
+              <i class="bi bi-box-arrow-up-right link-arrow"></i>
+            </a>
+          </div>
+
+          <div class="prompt-instructions-box">
+            <strong>Discussion Prompts to Answer:</strong>
+            <ol>
+              <li>Choose one of the design frameworks below that you find relevant to your engineering profession. Create a short discussion post describing how the framework may help with engineering design projects.</li>
+              <li>Briefly describe the Wearable Technology article you read and what you found interesting about this advancement.</li>
+            </ol>
+          </div>
+        </div>
+
+        <!-- 4 Design Frameworks Grid -->
+        <div class="frameworks-grid">
+          <div class="framework-card">
+            <h4>1. Human-Centered Design (IDEO)</h4>
+            <p>Empathize &rarr; Define &rarr; Ideate &rarr; Prototype &rarr; Test. Prioritizes patient comfort, ergonomic wearability, and non-stigmatizing form factors.</p>
+          </div>
+          <div class="framework-card">
+            <h4>2. Double Diamond Design Process</h4>
+            <p>Divergent &amp; convergent problem solving: Discover (broad inquiry) &rarr; Define (focus) &rarr; Develop (ideate solutions) &rarr; Deliver (prototype &amp; test).</p>
+          </div>
+          <div class="framework-card">
+            <h4>3. FDA Medical Device Design Controls</h4>
+            <p>21 CFR 820.30: User Needs &harr; Design Inputs &harr; Design Outputs &harr; Medical Device. Enforces Design Verification &amp; Validation (V&amp;V).</p>
+          </div>
+          <div class="framework-card">
+            <h4>4. Lean Hardware Prototyping</h4>
+            <p>Build &ndash; Measure &ndash; Learn fast feedback loops. Iterative breadboarding, battery power profiling, BLE telemetry, and firmware debugging.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 2: In-Class Pedometer Teardown Lab -->
+  <section class="section" id="teardown">
+    <div class="container">
+      <div class="section-title-wrap">
+        <span class="section-eyebrow">Hands-On Laboratory Protocol</span>
+        <h2 class="section-title">In-Class Activity: Reverse Engineering of a "Pedometer"</h2>
+        <p class="section-subtitle">
+          Deconstructing consumer electronics to understand electromechanical transducers, parts lists, and manufacturing costs.
+        </p>
+      </div>
+
+      <!-- Equipment Checklist -->
+      <div class="equipment-card">
+        <h3><i class="bi bi-box-seam-fill"></i> Required Materials &amp; Tooling</h3>
+        <p>
+          "You will need a <strong>screwdriver</strong>, the <strong>pedometer</strong> (or some other device from home that you can take apart) and a <strong>camera</strong>. You will need to use your computer to create a parts list, teardown instructions and process diagram of the pedometer components and assembly."
+        </p>
+        <div class="tool-tags-row">
+          <span class="tool-tag"><i class="bi bi-screwdriver"></i> Precision Screwdriver Set</span>
+          <span class="tool-tag"><i class="bi bi-smartwatch"></i> Digital Pedometer / Device</span>
+          <span class="tool-tag"><i class="bi bi-camera-fill"></i> Camera / Smartphone Photo Log</span>
+          <span class="tool-tag"><i class="bi bi-laptop"></i> Laptop for BOM &amp; Process Diagrams</span>
+        </div>
+      </div>
+
+      <!-- Initial Checkpoint -->
+      <div class="checkpoint-card">
+        <div class="checkpoint-icon"><i class="bi bi-hand-index-thumb-fill"></i></div>
+        <div>
+          <strong>Initial Lab Checkpoint Before Disassembly:</strong>
+          <p>
+            "Brainstorm all the components that you expect to find in the device before you take it apart. Write them down and show the instructor to claim your materials."
+          </p>
+        </div>
+      </div>
+
+      <!-- Reference Teardowns & PDF Downloads -->
+      <div class="references-section">
+        <h3 style="font-size:1.2rem; font-weight:800; color:var(--primary); margin-bottom:12px;">
+          <i class="bi bi-file-earmark-arrow-down-fill"></i> Teardown Guides &amp; Reference Architecture Downloads
+        </h3>
+        <p style="font-size:0.9rem; color:var(--text-muted); margin-bottom:16px;">
+          Review these curated teardown guides and schematics to guide your documentation:
+        </p>
+        
+        <div class="curated-links-grid">
+          <a href="PedometerTeardownGuide.pdf" target="_blank" class="link-card highlight-card">
+            <i class="bi bi-file-earmark-pdf-fill icon-primary"></i>
+            <div>
+              <strong>Pedometer Teardown Guide</strong>
+              <span>Download PDF guide &middot; Lab reference</span>
+            </div>
+            <i class="bi bi-download link-arrow"></i>
+          </a>
+
+          <a href="AIGenerated_CircuitDiagram_BOM_Pedometer.pdf" target="_blank" class="link-card highlight-card">
+            <i class="bi bi-cpu-fill icon-primary"></i>
+            <div>
+              <strong>AI Circuit Diagram &amp; BOM Example</strong>
+              <span>Download PDF &middot; KD2213B ASIC &amp; Cost Estimation</span>
+            </div>
+            <i class="bi bi-download link-arrow"></i>
+          </a>
+
+          <a href="http://diymanufacturing.mit.edu/?page_id=277" target="_blank" rel="noopener noreferrer" class="link-card">
+            <i class="bi bi-tools icon-blue"></i>
+            <div>
+              <strong>MIT DIY Manufacturing</strong>
+              <span>Hardware teardown &amp; DFM guide</span>
+            </div>
+            <i class="bi bi-box-arrow-up-right link-arrow"></i>
+          </a>
+
+          <a href="http://electronics.howstuffworks.com/gadgets/clocks-watches/digital-clock.htm/printable" target="_blank" rel="noopener noreferrer" class="link-card">
+            <i class="bi bi-clock-history icon-amber"></i>
+            <div>
+              <strong>HowStuffWorks: Digital Clock</strong>
+              <span>Quartz crystal &amp; circuit architecture</span>
+            </div>
+            <i class="bi bi-box-arrow-up-right link-arrow"></i>
+          </a>
+
+          <a href="http://www.electronicecircuits.com/electronic-circuits/cxa1019-fm-radio-circuit-diagram" target="_blank" rel="noopener noreferrer" class="link-card">
+            <i class="bi bi-broadcast-pin icon-green"></i>
+            <div>
+              <strong>CXA1019 FM Radio Circuit</strong>
+              <span>Electronic circuit schematic diagram</span>
+            </div>
+            <i class="bi bi-box-arrow-up-right link-arrow"></i>
+          </a>
+
+          <a href="http://www.ifixit.com/Teardown/iPhone+5+Teardown/10525/1" target="_blank" rel="noopener noreferrer" class="link-card">
+            <i class="bi bi-phone icon-red"></i>
+            <div>
+              <strong>iFixit iPhone Teardown</strong>
+              <span>Disassembly sequencing &amp; documentation</span>
+            </div>
+            <i class="bi bi-box-arrow-up-right link-arrow"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- The 5 Reverse Engineering Steps -->
+      <div style="margin-top:36px;">
+        <h3 style="font-size:1.3rem; font-weight:800; color:var(--primary); margin-bottom:16px;">
+          <i class="bi bi-list-check"></i> 5 Reverse Engineering Protocol Steps
+        </h3>
+        <div class="steps-container">
+          <div class="step-card">
+            <div class="step-num">1</div>
+            <div>
+              <h4>Check Functional Operation</h4>
+              <p>Check that your device is functional prior to disassembling. Record display response, button actuation, and battery health.</p>
+            </div>
+          </div>
+
+          <div class="step-card">
+            <div class="step-num">2</div>
+            <div>
+              <h4>Document Disassembly &amp; Joint Interfaces</h4>
+              <p>Document the step-by-step disassembly sequence and record how each component was connected (snap fits, screws, zebra elastomeric strips, solder pads, ultrasonic welds).</p>
+            </div>
+          </div>
+
+          <div class="step-card">
+            <div class="step-num">3</div>
+            <div>
+              <h4>Produce Bill of Materials (BOM)</h4>
+              <p>Produce a comprehensive list of all components and count of similar components using actual engineering names (e.g., cantilever pendulum hammer, hairspring, FR4 PCB, raw segment LCD glass, elastomeric zebra strip, coin-cell terminal).</p>
+            </div>
+          </div>
+
+          <div class="step-card">
+            <div class="step-num">4</div>
+            <div>
+              <h4>Component Function, Cost Estimation &amp; Suppliers</h4>
+              <p>Describe each component's engineering function, estimate component costs at 10,000-unit scale ($0.65&ndash;$1.15 typical COGS), and identify potential commercial suppliers or manufacturing processes (injection molding, metal stamping, COB wire-bonding).</p>
+            </div>
+          </div>
+
+          <div class="step-card">
+            <div class="step-num">5</div>
+            <div>
+              <h4>Produce System Process Diagram</h4>
+              <p>Produce a process diagram for how the pedometer and selected electromechanical components work together: from kinetic acceleration &rarr; pendulum deflection &rarr; switch contact &rarr; debounce logic &rarr; counter register &rarr; LCD multiplexer display.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- AI-Generated Circuit Diagram & BOM Showcase -->
+      <div class="ai-bom-showcase">
+        <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; margin-bottom:16px;">
+          <div>
+            <span class="tag-badge"><i class="bi bi-stars"></i> AI-Augmented Engineering Analysis</span>
+            <h3 style="font-size:1.25rem; font-weight:800; color:var(--primary); margin:6px 0 0 0;">
+              Example: AI-Generated Circuit Diagram &amp; Bill of Materials
+            </h3>
+          </div>
+          <a href="AIGenerated_CircuitDiagram_BOM_Pedometer.pdf" target="_blank" class="btn btn-primary btn-sm">
+            <i class="bi bi-file-earmark-pdf-fill"></i> View Full 4-Page PDF
+          </a>
+        </div>
+        <p style="font-size:0.9rem; color:var(--text-muted); margin-bottom:20px;">
+          Students photograph the disassembled PCB (IC: KD2213B) and leverage Multimodal AI to generate standard electrical schematics, bill of materials, and manufacturing cost models (COGS $0.65&ndash;$1.15, NRE tooling $10k&ndash;$20k).
+        </p>
+
+        <div class="ai-bom-gallery">
+          <div class="ai-bom-item">
+            <div class="ai-bom-img">
+              <img src="ai_circuit_diagram.png" alt="AI Generated Circuit Diagram from PCB Photo">
+            </div>
+            <div class="ai-bom-caption">
+              <strong>1. AI Circuit Extraction:</strong> PCB photo translated into schematic with MCU ASIC (KD2213B), display connector, switches, filter capacitor, and 3V coin cell.
+            </div>
+          </div>
+
+          <div class="ai-bom-item">
+            <div class="ai-bom-img">
+              <img src="ai_pedometer_parts.png" alt="Disassembled Pedometer Parts List">
+            </div>
+            <div class="ai-bom-caption">
+              <strong>2. Disassembled Parts List:</strong> Automated itemization of clamshell housing, inner bezel, raw segment LCD glass, zebra connector, pendulum hammer, hairspring, and fasteners.
+            </div>
+          </div>
+
+          <div class="ai-bom-item">
+            <div class="ai-bom-img">
+              <img src="ai_pedometer_costs.png" alt="Estimated Manufacturing Costs Table">
+            </div>
+            <div class="ai-bom-caption">
+              <strong>3. COGS &amp; NRE Cost Modeling:</strong> High-volume cost estimation across electronics ($0.20&ndash;$0.35), motion sensor ($0.05&ndash;$0.10), plastic tooling ($8k&ndash;$15k), and assembly.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Submission Requirements Checklist -->
+      <div class="submission-card">
+        <h4 style="font-size:1.1rem; font-weight:800; color:var(--primary); margin-bottom:10px;">
+          <i class="bi bi-check2-square"></i> Submitted Worksheet Deliverables:
+        </h4>
+        <ul class="deliverables-list">
+          <li><strong>Pictures of your disassembly methods:</strong> Multi-stage photographs showing outer clamshell removal, inner frame release, and electrical interconnects.</li>
+          <li><strong>Components list (BOM):</strong> Itemized table specifying component name, count, material, function, unit price, and tooling method.</li>
+          <li><strong>Process diagram:</strong> Functional flowchart showing how mechanical motion converts into digital step count on screen.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 3: Design Thinking & SCAMPER GenAI Activity -->
+  <section class="section section-alt" id="design-thinking">
+    <div class="container">
+      <div class="section-title-wrap">
+        <span class="section-eyebrow">Creative Ideation &middot; Studio Pedagogy</span>
+        <h2 class="section-title">Design Thinking &amp; SCAMPER GenAI Ideation</h2>
+        <p class="section-subtitle">
+          Based on the curriculum by <strong>Prof. John Peponis</strong> and <strong>Dr. Eric Meyer</strong>. 
+          From Need Finding and Zero Fidelity Prototyping to AI-accelerated divergent brainstorming.
+        </p>
+      </div>
+
+      <!-- Design Thinking Modules Grid -->
+      <div class="dt-modules-grid">
+        <!-- Module 1: Need Finding -->
+        <div class="dt-card">
+          <div class="dt-card-img" style="background:#FFFFFF;">
+            <img src="dt_need_finding.png" alt="Design Thinking Need Finding Formula">
+          </div>
+          <div class="dt-card-body">
+            <h3>1. Need Finding &amp; Statement Formula</h3>
+            <p>
+              Need finding discovers what a target population values and bridges the gap between goals and daily experience. Students formulate need statements adhering to:
+            </p>
+            <div class="formula-box">
+              "[Client/Population] needs [a type of solution] which [conforms to design constraints] in order to [further goal/provide value]."
+            </div>
+            <div style="font-size:0.84rem; color:var(--text-muted); font-style:italic;">
+              Example: "People with carpal tunnel syndrome need a treatment option that is effective, easy to use, and pleasurable to alleviate symptoms and avoid surgery."
+            </div>
+          </div>
+        </div>
+
+        <!-- Module 2: Zero Fidelity Prototyping -->
+        <div class="dt-card">
+          <div class="dt-card-img" style="background:#FFFFFF;">
+            <img src="dt_bisociation.png" alt="Zero Fidelity Prototyping and Bisociation">
+          </div>
+          <div class="dt-card-body">
+            <h3>2. Zero Fidelity Prototyping (ZFP) &amp; Bisociation</h3>
+            <p>
+              Students pair up (Partner #1 and #2) to spark radical concept exploration through <strong>Bisociation</strong> (combining an unexpected physical gesture with a character persona):
+            </p>
+            <ul class="bullet-list">
+              <li><strong>Brainstorming:</strong> Partner #1 poses a gesture/persona: <em>"I could imagine..."</em></li>
+              <li><strong>Need Finding:</strong> Partner #2 discovers the application: <em>"That could be good for..."</em></li>
+              <li>Divergent exploration uncovers unconstrained form factors before jumping into CAD.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Module 3: SCAMPER Framework -->
+        <div class="dt-card">
+          <div class="dt-card-img" style="background:#FFFFFF;">
+            <img src="dt_scamper.png" alt="SCAMPER for Brainstorming">
+          </div>
+          <div class="dt-card-body">
+            <h3>3. SCAMPER for Brainstorming</h3>
+            <p>
+              SCAMPER is an ideation technique for <strong>"Turning All The Knobs"</strong> on a design concept to eliminate "first idea syndrome":
+            </p>
+            <div class="scamper-mini-badges">
+              <span><strong>S</strong>ubstitute</span>
+              <span><strong>C</strong>ombine</span>
+              <span><strong>A</strong>dapt</span>
+              <span><strong>M</strong>odify</span>
+              <span><strong>P</strong>ut to Another Use</span>
+              <span><strong>E</strong>liminate</span>
+              <span><strong>R</strong>everse</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Module 4: Concept Selection Matrix -->
+        <div class="dt-card">
+          <div class="dt-card-img" style="background:#FFFFFF;">
+            <img src="dt_selection_matrix.png" alt="Concept Selection Matrix">
+          </div>
+          <div class="dt-card-body">
+            <h3>4. Concept Selection Matrix</h3>
+            <p>
+              Brainstorming yields a high volume of divergent concepts. Systematic evaluation requires objective selection criteria:
+            </p>
+            <ul class="bullet-list">
+              <li>Screen out insufficient concepts against core constraints.</li>
+              <li>Construct a weighted design matrix (Cost, Strength, Weight, Ergonomics).</li>
+              <li>Balance quantitative matrix scores with engineering intuition and user feedback.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- SCAMPER GenAI Box -->
+      <div class="scamper-ai-box" id="scamper-ai">
+        <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:16px; margin-bottom:16px;">
+          <div>
+            <span class="tag-badge"><i class="bi bi-robot"></i> Generative AI Ideation Assistant</span>
+            <h3 style="font-size:1.4rem; font-weight:800; color:var(--primary); margin:6px 0 0 0;">
+              SCAMPER GenAI Tool &amp; Custom Gemini Assistant
+            </h3>
+            <div style="font-size:0.88rem; color:var(--text-muted);">
+              "Best Practice: Engineer Context, Not Just the Prompt &middot; Sketches &rarr; Image Generation for Imagination"
+            </div>
+          </div>
+          <div style="display:flex; gap:10px; flex-wrap:wrap;">
+            <a href="https://gemini.google.com/gem/33a41862bd77" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+              <i class="bi bi-stars"></i> Launch Gemini SCAMPER GEM
+            </a>
+            <a href="DesignThinking_SCAMPER_WearableStudio.pdf" target="_blank" class="btn btn-outline btn-sm">
+              <i class="bi bi-file-earmark-pdf-fill"></i> Download Design Thinking Slides (PDF)
+            </a>
+          </div>
+        </div>
+
+        <div class="prompt-template-card">
+          <div style="font-weight:700; color:var(--primary); margin-bottom:6px;">
+            <i class="bi bi-terminal-fill"></i> SCAMPER GenAI Prompt Template:
+          </div>
+          <code class="code-block">
+            "I am designing a [device name / category, e.g. Light-up Costume / Smart Knee Sleeve] for a Wearable Technology Design Studio course. Here is my design concept so far: [describe initial concept &amp; upload sketches]. Follow the SCAMPER prompts to brainstorm many variations on this design concept."
+          </code>
+          <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px; margin-top:10px; font-size:0.82rem; color:var(--text-muted);">
+            <span>Custom Gemini Assistant: <a href="https://gemini.google.com/gem/33a41862bd77" target="_blank" rel="noopener noreferrer" style="font-weight:700; color:var(--primary);">gemini.google.com/gem/33a41862bd77</a></span>
+            <span>Upload hand-drawn sketches directly into Gemini for multimodal brainstorming</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 4: Final Deliverable - Individual Homework Assignment 1 -->
+  <section class="section" id="homework">
+    <div class="container">
+      <div class="section-title-wrap">
+        <span class="section-eyebrow">Capstone Investigation &middot; Final Deliverable</span>
+        <h2 class="section-title">Individual Homework Assignment 1: Wearable Devices Interactive Presentation</h2>
+        <p class="section-subtitle">
+          Benchmarking, teardown research, and interactive GitHub presentation of a commercial wearable technology product.
+        </p>
+      </div>
+
+      <div class="hw-card">
+        <div class="hw-header">
+          <div>
+            <span class="tag-badge"><i class="bi bi-github"></i> GitHub Portfolio Project</span>
+            <h3 style="font-size:1.35rem; font-weight:800; color:var(--primary); margin:8px 0 0 0;">
+              Wearable Devices Investigation &amp; 10-Slide Interactive Presentation
+            </h3>
+          </div>
+          <div style="display:flex; gap:10px; flex-wrap:wrap;">
+            <a href="https://ltuebl.github.io/ringly-smart-ring-presentation/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+              <i class="bi bi-play-circle-fill"></i> Live Interactive Example Presentation
+            </a>
+            <a href="Ringly_SmartRing_WearableStudio_Example.pdf" target="_blank" class="btn btn-outline btn-sm">
+              <i class="bi bi-file-earmark-pdf-fill"></i> Download Example PDF Guide
+            </a>
+          </div>
+        </div>
+
+        <div class="hw-body">
+          <div class="callout-box">
+            <strong>GitHub Workflow Requirement:</strong>
+            <p>
+              "We will be using <strong>GitHub</strong> to share both individual work and group projects. Create an account or log in. Create a repository for each new project to organize all your materials and work this semester. You should make it public when you are ready to share with the class."
+            </p>
+          </div>
+
+          <h4 style="font-size:1.05rem; font-weight:800; color:var(--primary); margin:20px 0 10px;">
+            <i class="bi bi-search"></i> Product Selection &amp; Research Guidelines:
+          </h4>
+          <p style="font-size:0.92rem; color:var(--text-main); line-height:1.65; margin-bottom:12px;">
+            To practice making and sharing these documents you will identify a wearable technology device that is interesting and that you would like to learn about and share with the class.
+          </p>
+          <ul class="bullet-list" style="margin-bottom:20px;">
+            <li>Search online for the product's webpage, reviews, teardowns, etc., such as this example teardown video: <a href="https://www.youtube.com/watch?v=E0GufWmT4mU" target="_blank" rel="noopener noreferrer" style="font-weight:700; color:var(--primary); text-decoration:underline;">YouTube Wearable Teardown</a>.</li>
+            <li>Include firsthand knowledge if you own the device or know someone who does.</li>
+            <li>A good source for wearable device teardowns is to search the Adafruit channel: <a href="https://www.youtube.com/c/adafruit/search?query=wearable+teardown" target="_blank" rel="noopener noreferrer" style="font-weight:700; color:var(--primary); text-decoration:underline;">Adafruit Wearable Teardowns Search</a>.</li>
+            <li>Use AI to help with your benchmarking search for related products and summary of consumer responses.</li>
+            <li>Your presentation should be well organized and informative with links between the main page and specific feature pages.</li>
+            <li>Specific details can usually be found in the product's "Tech Specs" pages, but other information might require digging into other sources or your own reflections and experience.</li>
+            <li>Use multimedia (pictures, diagrams, short videos, etc.) generously, and try to limit the text on each slide.</li>
+            <li>Keep in mind your audience (other students) and organize the material to their level of knowledge and understanding. Double-check professional spelling and grammar.</li>
+          </ul>
+
+          <h4 style="font-size:1.05rem; font-weight:800; color:var(--primary); margin-bottom:14px;">
+            <i class="bi bi-layout-text-window-reverse"></i> Required 10-Slide Interactive Structure:
+          </h4>
+          
+          <div class="slides-grid">
+            <div class="slide-item">
+              <span class="slide-num">Slide 1</span>
+              <strong>Title Slide</strong>
+              <span>Product name, imagery, author name, and course details.</span>
+            </div>
+            <div class="slide-item">
+              <span class="slide-num">Slide 2</span>
+              <strong>Clickable Diagram (Menu)</strong>
+              <span>Interactive navigation menu with clickable links to all feature slides.</span>
+            </div>
+            <div class="slide-item">
+              <span class="slide-num">Slide 3</span>
+              <strong>Value Proposition</strong>
+              <span>Mission statement, target demographic, problems solved, and user value.</span>
+            </div>
+            <div class="slide-item">
+              <span class="slide-num">Slide 4</span>
+              <strong>User Inputs &amp; Outputs</strong>
+              <span>Buttons, capacitive touch, haptic vibration, RGB LEDs, sensors, and feedback.</span>
+            </div>
+            <div class="slide-item">
+              <span class="slide-num">Slide 5</span>
+              <strong>Mobile App Connectivity</strong>
+              <span>iOS/Android app pairing, BLE wireless telemetry, alert triggers, cloud data.</span>
+            </div>
+            <div class="slide-item">
+              <span class="slide-num">Slide 6</span>
+              <strong>Retail &amp; Business Strategy</strong>
+              <span>Retail pricing, sizing, market positioning, lifecycle, and commercial outcome.</span>
+            </div>
+            <div class="slide-item">
+              <span class="slide-num">Slide 7</span>
+              <strong>Hardware Components</strong>
+              <span>Rigid/flexible PCB, MCU, battery, antennas, sensors, and charging case.</span>
+            </div>
+            <div class="slide-item">
+              <span class="slide-num">Slide 8</span>
+              <strong>Fabrication &amp; Assembly</strong>
+              <span>Folded flex PCB inside cavity, housing press-fit, charging contact pins.</span>
+            </div>
+            <div class="slide-item">
+              <span class="slide-num">Slide 9</span>
+              <strong>Your Personal Review</strong>
+              <span>Engineering strengths, ergonomics, competitive alternatives, and weaknesses.</span>
+            </div>
+            <div class="slide-item">
+              <span class="slide-num">Slide 10</span>
+              <strong>References &amp; Sources</strong>
+              <span>Links to teardown videos, technical spec sheets, product reviews, and articles.</span>
+            </div>
+          </div>
+
+          <!-- Example Showcase Card -->
+          <div class="example-showcase-box">
+            <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; margin-bottom:12px;">
+              <span style="font-weight:800; font-size:1.05rem; color:var(--primary);">
+                <i class="bi bi-gem"></i> Interactive Benchmark Example: Ringly Luxe Smart Ring
+              </span>
+              <a href="https://ltuebl.github.io/ringly-smart-ring-presentation/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+                <i class="bi bi-box-arrow-up-right"></i> Open Live Interactive Slides
+              </a>
+            </div>
+            <p style="font-size:0.88rem; color:var(--text-muted); line-height:1.55; margin-bottom:0;">
+              An authentic implementation of the 10-slide requirements built by Dr. Meyer and deployed on GitHub Pages. Features interactive slide navigation, folded flex circuit teardown photos, and market failure analysis. Download the complete guide PDF: <a href="Ringly_SmartRing_WearableStudio_Example.pdf" target="_blank" style="font-weight:700; color:var(--primary); text-decoration:underline;">Ringly_SmartRing_WearableStudio_Example.pdf</a>.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- App Footer -->
+  <footer class="app-footer">
+    <div class="container footer-inner">
+      <div>
+        <strong>Experimental Biomechanics Laboratory &middot; Lawrence Technological University</strong><br>
+        <span style="color:#94A3B8; font-size:0.85rem;">Department of Biomedical Engineering &middot; Wearable Technology Innovation Center (WTIC)</span>
+      </div>
+      <div class="footer-links-row">
+        <a href="https://ltuebl.github.io/"><i class="bi bi-house-door-fill"></i> EBL Main Site</a>
+        <a href="https://github.com/LTUebl/WearableReverseEngineering" target="_blank"><i class="bi bi-github"></i> Repository</a>
+        <a href="https://engineeringunleashed.com/card/5823" target="_blank"><i class="bi bi-lightbulb-fill"></i> KEEN Card #5823</a>
+        <a href="mailto:emeyer@ltu.edu"><i class="bi bi-envelope-fill"></i> Contact Dr. Meyer</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
